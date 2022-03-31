@@ -1,2 +1,3 @@
 No puedo ver el archivo porque estamos en otro branch, son independientes uno del otro, cuando estoy en main no puedo acceder a los archivos del branch Opcion_2.
+Ahora notamos claramente la diferencia entre el main y el branch Opcion_2 al avanzar el primero en un commit con respecto a Opcion_2.
 
