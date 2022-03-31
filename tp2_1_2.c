@@ -5,13 +5,15 @@
 #define N 20
 
 int main(){
-
     int i;
+    int *p;
     int vt[N];
-    srand(time(NULL));  
+    srand(time(NULL));
 
+    p=vt;
+    
     for(i = 0;i<N; i++){
-        vt[i]=1+rand()%100;
-        printf("%d\n", vt[i]);
+        *(p+i)=1+rand()%100;
+        printf("%d\n", *(p+i));
     }
 }
