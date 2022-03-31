@@ -1,0 +1,2 @@
+No puedo ver el archivo porque estamos en otro branch, son independientes uno del otro, cuando estoy en main no puedo acceder a los archivos del branch Opcion_2.
+
