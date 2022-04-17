@@ -6,12 +6,12 @@
 
 int main(){
 
-    int i;
     int vt[N];
     srand(time(NULL));  
 
-    for(i = 0;i<N; i++){
+    for(int i = 0;i<N; i++)
+    {
         vt[i]=1+rand()%100;
-        printf("%d\n", vt[i]);
+        printf("%4d", vt[i]);
     }
 }

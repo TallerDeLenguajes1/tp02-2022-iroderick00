@@ -2,21 +2,22 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define N 5
-#define M 7
+#define filas 5
+#define columnas 7
 
-int main(){
-
-    int i,j;
-    int mt[N][M];
+int main()
+{
     int *p;
-    p=&mt[0][0]; //ahora me gusta >:v 
+    int mt[filas][columnas];
     srand(time(NULL));
+    p=&mt[0][0];
 
-    for(i = 0;i<N; i++){
-        for(j = 0;j<M; j++){
-            *(p+(i * M + j))=1+rand()%100;
-            printf("%d ",*(p +(i * M + j)));
+    for(int i = 0;i<filas; i++)
+    {
+        for(int j = 0;j<columnas; j++)
+        {
+            *(p+i*columnas+j)=1+rand()%100;
+            printf("%4d ",*(p+(i*columnas+j)));
         }
         printf("\n");
     }
